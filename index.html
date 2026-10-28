@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilim Makoni | Online Maktab</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">🎓 Bilim Makoni</a>
+
+        <nav class="navbar">
+            <a href="#home">Bosh sahifa</a>
+            <a href="#courses">Fanlar</a>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#test">Testlar</a>
+        </nav>
+
+        <a href="#courses" class="nav-button">Dars boshlash</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">🚀 Kelajagingni bilim bilan qur!</span>
+                <h1>Bilim olish endi <span>yanada oson!</span></h1>
+                <p>
+                    Istalgan joyda, istalgan vaqtda o‘rgan.
+                    Zamonaviy video darslar va qiziqarli testlar
+                    orqali bilimingni oshir.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#courses" class="btn primary">Darslarni ko‘rish →</a>
+                    <a href="#about" class="btn secondary">Biz haqimizda</a>
+                </div>
+
+                <div class="stats">
+                    <div><strong>4+</strong><small>O‘quv fanlari</small></div>
+                    <div><strong>100%</strong><small>O‘rganishga imkon</small></div>
+                    <div><strong>24/7</strong><small>Bilim olish</small></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="book-icon">📚</div>
+                <div class="hero-card">
+                    <span>✨</span>
+                    <h3>Bugun o‘rgan,</h3>
+                    <h3>ertaga yuksal!</h3>
+                    <p>Har bir yangi bilim — yangi imkoniyat.</p>
+                </div>
+                <div class="floating-icon">💡</div>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <h2>O‘quvchi kabineti</h2>
+            <p>Ismingni yoz va bilim olishni boshlagin.</p>
+            <form id="welcomeForm">
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Ismingni kiriting"
+                    required
+                    maxlength="40"
+                >
+                <button type="submit" class="btn primary">Kirish</button>
+            </form>
+            <p id="welcomeMessage" aria-live="polite"></p>
+        </section>
+
+        <section class="section courses" id="courses">
+            <div class="section-heading">
+                <span class="tag">📖 Bilimlar olami</span>
+                <h2>O‘zingga mos fanni tanla</h2>
+                <p>Quyidagi fanlardan birini tanlab, o‘rganishni boshla.</p>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <div class="course-icon math">➗</div>
+                    <span class="course-label">Aniq fan</span>
+                    <h3>Matematika</h3>
+                    <p>Sonlar, tenglamalar va mantiqiy masalalarni o‘rgan.</p>
+                    <button class="course-button" data-course="Matematika">
+                        Darsni ochish →
+                    </button>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-icon it">💻</div>
+                    <span class="course-label">Texnologiya</span>
+                    <h3>Informatika</h3>
+                    <p>Dasturlash va kompyuter olamiga ilk qadamni qo‘y.</p>
+                    <button class="course-button" data-course="Informatika">
+                        Darsni ochish →
+                    </button>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-icon english">🌍</div>
+                    <span class="course-label">Xorijiy til</span>
+                    <h3>Ingliz tili</h3>
+                    <p>Yangi so‘zlar va sodda gaplar orqali til o‘rgan.</p>
+                    <button class="course-button" data-course="Ingliz tili">
+                        Darsni ochish →
+                    </button>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-icon science">🔬</div>
+                    <span class="course-label">Tabiiy fan</span>
+                    <h3>Tabiiy fanlar</h3>
+                    <p>Tabiat, kashfiyotlar va ilmiy hodisalarni o‘rgan.</p>
+                    <button class="course-button" data-course="Tabiiy fanlar">
+                        Darsni ochish →
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section lesson-section" id="lesson">
+            <div class="section-heading">
+                <span class="tag">🎬 O‘rganishni boshlaymiz</span>
+                <h2 id="lessonTitle">Video darslar</h2>
+                <p id="lessonDescription">
+                    Fan tanlaganingda shu yerda dars materiallari ko‘rinadi.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <div class="lesson-symbol">🎓</div>
+                <div>
+                    <h3 id="lessonTopic">Birinchi qadamingni qo‘y!</h3>
+                    <p id="lessonText">
+                        Yuqoridagi fanlardan birini tanla.
+                        Bu namuna saytda darslar uchun joy tayyorlangan.
+                    </p>
+                </div>
+            </div>
+            <div id="lessonVideo" class="video-container" hidden></div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="about-illustration">🧑‍💻📚</div>
+            <div class="about-content">
+                <span class="tag">Bizning maqsadimiz</span>
+                <h2>Har bir o‘quvchi uchun zamonaviy ta’lim</h2>
+                <p>
+                    Bilim Makoni — o‘quvchilarga fanlarni oson va
+                    qiziqarli usulda o‘rganish uchun mo‘ljallangan
+                    online maktab loyihasi.
+                </p>
+                <ul>
+                    <li>✅ Tushunarli o‘quv materiallari</li>
+                    <li>✅ Qiziqarli testlar</li>
+                    <li>✅ O‘z tezligingda o‘rganish</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section quiz-section" id="test">
+            <div class="section-heading">
+                <span class="tag">🧠 Bilimingni sinab ko‘r</span>
+                <h2>Qiziqarli mini-test</h2>
+                <p>Savolga javob ber va natijangni bilib ol.</p>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-top">
+                    <span id="questionNumber">1-savol / 3</span>
+                    <span id="quizScore">Ball: 0</span>
+                </div>
+
+                <h3 id="questionText">HTML nimani yaratish uchun ishlatiladi?</h3>
+
+                <div id="answerOptions" class="answer-options"></div>
+
+                <p id="quizFeedback" aria-live="polite"></p>
+
+                <button id="nextQuestion" class="btn primary" hidden>
+                    Keyingi savol →
+                </button>
+
+                <button id="restartQuiz" class="btn secondary" hidden>
+                    Qayta boshlash ↻
+                </button>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Kelajaging bugundan boshlanadi!</h2>
+            <p>Har kuni yangi bilim ol va orzularing sari intil.</p>
+            <a href="#courses" class="btn cta-button">O‘rganishni boshlash →</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">🎓 Bilim Makoni</a>
+        <p>© 2026 Bilim Makoni. Barcha huquqlar himoyalangan.</p>
+        <a href="#home">Yuqoriga ↑</a>
+    </footer>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
